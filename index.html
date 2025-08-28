@@ -2,6 +2,52 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Site bilingue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 data-en="Welcome" data-fr="Bienvenue">Bienvenue</h1>
+        <h2 data-en="My Thesis" data-fr="Ma Thèse">Ma Thèse</h2>
+        <div class="lang-switch">
+            <img src="fr.png" alt="FR" id="btn-fr" class="lang-btn">
+            <img src="en.png" alt="EN" id="btn-en" class="lang-btn">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#" data-en="Home" data-fr="Accueil">Accueil</a>
+        <a href="#" data-en="About" data-fr="À propos">À propos</a>
+        <a href="#" data-en="Contact" data-fr="Contact">Contact</a>
+    </nav>
+
+    <main>
+        <p data-en="I am currently a first-year doctoral student at the University of Paris-Saclay (Orsay Mathematics Laboratory).
+                I am doing my thesis - Optimal Entropic Transport and Some Generalizations - under the supervision of Luca Nenna
+                (University of Paris-Saclay) and Paul Pegon (University of Paris-Dauphine). <br><br>
+                I am particularly interested in optimal transport,
+                the calculus of variations, and optimization more generally." 
+           data-fr="Je suis actuellement doctorant en première année à l'université Paris-Saclay (Laboratoire de mathématiques d'Orsay). 
+                J'effectue ma thèse - Transport optimal entropique et quelques généralisations - sous la direction de Luca Nenna 
+                (univ. Paris-Saclay) et Paul Pegon (univ. Paris-Dauphine).  <br><br>
+                Je suis particulièrement intéressé par le transport optimal, 
+                le calcul des variations et plus généralement l'optimisation.">
+           Je suis actuellement doctorant en première année à l'université Paris-Saclay (Laboratoire de mathématiques d'Orsay). 
+           J'effectue ma thèse - Transport optimal entropique et quelques généralisations - sous la direction de Luca Nenna 
+           (univ. Paris-Saclay) et Paul Pegon (univ. Paris-Dauphine).  <br><br>
+            Je suis particulièrement intéressé par le transport optimal, le calcul des variations et plus généralement l'optimisation.
+        </p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
     <title>Page académique</title>
     <link rel="stylesheet" href="style.css">
 </head>
