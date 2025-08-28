@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title> Enseignement - Louis Tocquec</title>
+    <title>Enseignement - Louis Tocquec</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,8 +10,8 @@
         <h1 data-en="Welcome" data-fr="Bienvenue">Bienvenue</h1>
         <h2 data-en="My Thesis" data-fr="Ma Thèse">Ma Thèse</h2>
         <div class="lang-switch">
-        <img src="fr.png" alt="FR" id="btn-fr" class="lang-btn">
-        <img src="en.png" alt="EN" id="btn-en" class="lang-btn">
+            <img src="fr.png" alt="FR" id="btn-fr" class="lang-btn">
+            <img src="en.png" alt="EN" id="btn-en" class="lang-btn">
         </div>
     </header>
 
@@ -19,30 +19,41 @@
         <a href="index.html" data-en="Home" data-fr="Accueil">Accueil</a>
         <a href="publications.html" data-en="Publications" data-fr="Publications">Publications</a>
         <a href="enseignement.html" data-en="Teaching" data-fr="Enseignement">Enseignement</a>
-        <a href="cv.html" data-en="Vitae" data-fr="Viate">Vitae</a>
+        <a href="cv.html" data-en="Vitae" data-fr="Vitae">Vitae</a>
         <a href="contact.html" data-en="Contact" data-fr="Contact">Contact</a>
     </nav>
 
     <main>
-        <h2 >Enseignements</h2>
-        <ul>
-            <li>
-                Calcul numérique, 2025-2026
-                <br><em> L2 Mathématiques, université Paris-Saclay</em> <br>
-            </li>
-             <li>
-                Introduction à Python, 2025-2026
-                <br><em> L1 Mathématiques, université Paris-Saclay</em> <br>
-            </li>
-             <li>
-                Equations différentielles, 2025-2026
-                <br><em> L2 Physique, université Paris-Saclay</em> <br>
-            </li>
-             <li>
-                Calcul numérique, 2024-2025
-                <br><em> L2 Mathématiques, université Paris-Saclay</em>
-            </li>
-        </ul>
+        <section id="teaching">
+            <h2 data-en="Teaching" data-fr="Enseignement">Enseignements</h2>
+
+            <h3>2025-2026</h3>
+            <ul>
+                <li data-en="Numerical calculus, L2 Mathematics, université Paris-Saclay"
+                    data-fr="Calcul numérique, L2 Mathématiques, université Paris-Saclay">
+                    Calcul numérique, <em>L2 Mathématiques, université Paris-Saclay</em>
+                </li>
+                <li data-en="Introduction to Python, L1 Mathematics, université Paris-Saclay"
+                    data-fr="Introduction à Python, L1 Mathématiques, université Paris-Saclay">
+                    Introduction à Python, <em>L1 Mathématiques, université Paris-Saclay</em>
+                </li>
+                <li data-en="Differential equations, L2 Physic, université Paris-Saclay"
+                    data-fr="Équations différentielles, L2 Physique, université Paris-Saclay">
+                    Équations différentielles, <em>L2 Physique, université Paris-Saclay</em>
+                </li>
+            </ul>
+
+            <h3>2024-2025</h3>
+            <ul>
+                <li data-en="Numerical calculus, L2 Mathematics, université Paris-Saclay"
+                    data-fr="Calcul numérique, L2 Mathématiques, université Paris-Saclay">
+                    Calcul numérique, <em>L2 Mathématiques, université Paris-Saclay</em>
+                </li>
+            </ul>
+        </section>
     </main>
+
+    
+    <script src="script.js"></script>
 </body>
 </html>
