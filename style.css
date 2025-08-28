@@ -7,11 +7,16 @@ body {
 }
 
 header {
-    background: #004080;
-    color: white; /* Texte blanc */
-    padding: 20px;
-    text-align: center;
-}
+            background: #004080; /* fond bleu foncé */
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white; /* texte blanc pour bien contraster */
+            margin: 0;
+            font-size: 2em;
+        }
 
 nav {
     background: #e0e0e0;
