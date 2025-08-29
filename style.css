@@ -9,18 +9,18 @@ body {
 
 header {
   position: relative;
-  background: url("Ville-Close.png") no-repeat center/cover;
+  background: url("Ville-Close.png") no-repeat center/cover; /* photo derrière */
   padding: 60px 20px;
   text-align: center;
-  color: white;
+  color: white; /* texte en blanc */
 }
 
-/* Voile sombre transparent */
+/* Voile sombre pour améliorer la lisibilité du texte */
 header::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* noir à 40% */
+  background: rgba(0, 0, 0, 0.4); /* voile semi-transparent */
   z-index: 1;
 }
 
@@ -29,6 +29,13 @@ header h1,
 header h2 {
   position: relative;
   z-index: 2;
+  margin: 0;
+}
+
+/* Optionnel : espacer le sous-titre */
+header h2 {
+  margin-top: 10px;
+  font-weight: normal;
 }
 
 nav {
