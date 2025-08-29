@@ -66,7 +66,7 @@ main {
 .portrait-left {
   float: left;             /* aligne à gauche du texte */
   margin: 0 20px 20px 0;   /* espace autour : haut/droite/bas/gauche */
-  width: 160px;            /* largeur réduite */
+  width: 200px;            /* largeur réduite */
   height: auto;            /* garde les proportions */
   border-radius: 10px;     /* coins légèrement arrondis */
   box-shadow: 0 3px 8px rgba(0,0,0,0.2); /* petite ombre */
