@@ -9,20 +9,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function switchLanguage(lang) {
     elements.forEach(el => {
-      el.innerHTML = el.dataset[lang]; // <-- garde le HTML
+      // Si c’est un lien (<a>), on ne change que le texte
+      if (el.tagName.toLowerCase() === "a") {
+        el.innerText = el.dataset[lang];
+      } 
+      // Sinon (titres, paragraphes...), on peut remplacer tout le contenu
+      else {
+        el.innerHTML = el.dataset[lang];
+      }
     });
     localStorage.setItem('lang', lang); // sauvegarde la langue choisie
   }
 
-  // Ajoute l’événement sur les boutons
+  // Clique sur un bouton de langue
   langButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       switchLanguage(btn.dataset.lang);
     });
   });
 
-  // Charge la langue sauvegardée ou défaut FR
+  // Charge la langue sauvegardée ou FR par défaut
   const savedLang = localStorage.getItem('lang') || 'fr';
   switchLanguage(savedLang);
 });
-
