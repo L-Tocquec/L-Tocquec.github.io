@@ -2,33 +2,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const langButtons = document.querySelectorAll('.lang-btn');
   const elements = document.querySelectorAll('[data-en][data-fr]');
 
-  // Ajoute l’emoji dans chaque bouton
+  // Met l’emoji sur les boutons
   langButtons.forEach(btn => {
     btn.textContent = btn.dataset.emoji;
   });
 
   function switchLanguage(lang) {
     elements.forEach(el => {
-      // Si c’est un lien (<a>), on ne change que le texte
+      // Si c'est un lien, changer seulement le texte
       if (el.tagName.toLowerCase() === "a") {
         el.innerText = el.dataset[lang];
-      } 
-      // Sinon (titres, paragraphes...), on peut remplacer tout le contenu
-      else {
+      } else {
+        // Sinon changer le texte/HTML
         el.innerHTML = el.dataset[lang];
       }
     });
-    localStorage.setItem('lang', lang); // sauvegarde la langue choisie
+
+    localStorage.setItem('lang', lang); // sauvegarde la langue
   }
 
-  // Clique sur un bouton de langue
+  // Événements sur les boutons de langue
   langButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       switchLanguage(btn.dataset.lang);
     });
   });
 
-  // Charge la langue sauvegardée ou FR par défaut
+  // Charger la langue sauvegardée ou par défaut 'fr'
   const savedLang = localStorage.getItem('lang') || 'fr';
   switchLanguage(savedLang);
 });
