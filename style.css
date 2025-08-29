@@ -25,9 +25,9 @@ header::before {
 }
 
 
-header h1,
-header h2 {
+header h1 {
   position: relative;
+  color: white;  
   z-index: 2;
   margin: 0;
 }
