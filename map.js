@@ -9,5 +9,5 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 L.marker([latitude, longitude])
   .addTo(map)
-  .bindPopup("Mon bureau 🏢<br>Venez me dire bonjour !")
+  .bindPopup("My office in Orsay 🏢")
   .openPopup();
