@@ -64,10 +64,11 @@ main {
 }
 
 .portrait-right {
-    display: block;             /* l'image prend toute la ligne */
-    margin: 20px 0 0 auto;      /* la pousse à droite */
-    width: 190px;
-    height: auto;
+    float: right;                /* place l'image à droite */
+    width: 190px;                /* largeur fixe */
+    max-width: 40%;              /* jamais plus large que 40% du conteneur */
+    height: auto;                /* garde les proportions */
+    margin: 0 0 20px 20px;       /* espace à gauche et en dessous */
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
