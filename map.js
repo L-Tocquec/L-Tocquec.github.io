@@ -1,5 +1,5 @@
-const latitude = 48.6980;
-const longitude = 2.1740;
+const latitude = 48.70028;  
+const longitude = 2.17847;  
 
 const map = L.map('map').setView([latitude, longitude], 16);
 
