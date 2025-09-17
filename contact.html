@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <title> Contact - Louis Tocquec</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+    #map {
+      height: 300px; /* hauteur de la carte */
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,16 +28,35 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <main>
-    <h2>Contact</h2>
-    <ul>
-        <li>
-            Mail: <em>firstname.lastname@universite-paris-saclay.fr</em>
-        </li>
-        <li>
-            Office: <em>2A2, Institut de Mathématiques d'Orsay, 307 rue Michel Magat, 91400 Orsay</em>
-        </li>    
-    </ul>
-    </main>
+   <main>
+  <h2>Contact</h2>
+  <ul>
+    <li>Mail: <em>firstname.lastname@universite-paris-saclay.fr</em></li>
+    <li>Office: <em>2A2, Institut de Mathématiques d'Orsay, 307 rue Michel Magat, 91400 Orsay</em></li>    
+  </ul>
+
+  <div id="map"></div>
+</main>
+
+<style>
+  #map {
+    height: 300px;          /* hauteur de la carte */
+    max-width: 600px;       /* largeur maximale */
+    margin: 20px auto;      /* centre la carte */
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+  }
+</style>
 </body>
+
 
