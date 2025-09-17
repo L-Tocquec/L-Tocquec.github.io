@@ -33,18 +33,18 @@ header::before {
 }
 
 
-header h1 {
+header h1,
+header h2 {
   position: relative;
   color: white;  
   z-index: 2;
   margin: 0;
+  font-weight: 500;  
 }
 
-
 header h2 {
-  margin-top: 10px;
-  font-weight: 500; 
-  color: white;
+  margin-top: 10px;   
+  font-size: 0.85em;  
 }
 
 nav {
