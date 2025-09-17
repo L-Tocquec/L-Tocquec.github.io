@@ -2,15 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Contact - Louis Tocquec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Louis Tocquec</title>
+
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- Styles internes pour la carte et photo -->
   <style>
+    /* Carte centrée et avec ombre */
     #map {
-      height: 300px; /* hauteur de la carte */
+      height: 300px;
+      max-width: 600px;
+      margin: 20px auto;
       border-radius: 12px;
       box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-      margin-top: 20px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: #004080;
+    }
+
+    /* Photo à droite du texte */
+    .portrait-right {
+      float: right;
+      width: 190px;
+      max-width: 40%;
+      height: auto;
+      margin: 0 0 20px 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Nettoie le float après main */
+    main::after {
+      content: "";
+      display: table;
+      clear: both;
     }
   </style>
 </head>
@@ -20,43 +58,30 @@
     <h2>PhD student in applied mathematics</h2>
   </header>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="publications.html">Publications</a>
-        <a href="enseignement.html">Teaching</a>
-        <a href="cv.html">Vitae</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="enseignement.html">Teaching</a>
+    <a href="cv.html">Vitae</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-   <main>
-  <h2>Contact</h2>
-  <ul>
-    <li>Mail: <em>firstname.lastname@universite-paris-saclay.fr</em></li>
-    <li>Office: <em>2A2, Institut de Mathématiques d'Orsay, 307 rue Michel Magat, 91400 Orsay</em></li>    
-  </ul>
+  <main>
+    <h2>Contact</h2>
+    <!-- Photo à droite -->
+    <img src="ton-image.jpg" alt="Ma photo" class="portrait-right">
 
-  <div id="map"></div>
-</main>
+    <ul>
+      <li>Mail: <em>firstname.lastname@universite-paris-saclay.fr</em></li>
+      <li>Office: <em>2A2, Institut de Mathématiques d'Orsay, 307 rue Michel Magat, 91400 Orsay</em></li>    
+    </ul>
 
-<style>
-  #map {
-    height: 300px;          /* hauteur de la carte */
-    max-width: 600px;       /* largeur maximale */
-    margin: 20px auto;      /* centre la carte */
-    border-radius: 12px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  }
+    <h2>Où me trouver</h2>
+    <div id="map"></div>
+  </main>
 
-  main {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-  }
-
-  h2 {
-    margin-top: 30px;
-  }
-</style>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Ton fichier JS externe -->
+  <script src="map.js"></script>
 </body>
-
-
