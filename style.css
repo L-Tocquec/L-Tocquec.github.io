@@ -61,15 +61,11 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
-    min-height: 100vh; /* occupe toute la hauteur de l'écran */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* espace entre le contenu et la photo */
 }
 
-.portrait-bottom {
-    align-self: center; /* centre horizontalement l'image */
-    margin-top: 20px;
+.portrait-right {
+    display: block;             /* l'image prend toute la ligne */
+    margin: 20px 0 0 auto;      /* la pousse à droite */
     width: 190px;
     height: auto;
     border-radius: 10px;
