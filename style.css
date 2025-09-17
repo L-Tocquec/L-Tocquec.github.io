@@ -72,13 +72,25 @@ main {
 }
 
 .portrait-right {
-    float: right;                /* place l'image à droite */
-    width: 190px;                /* largeur fixe */
-    max-width: 40%;              /* jamais plus large que 40% du conteneur */
-    height: auto;                /* garde les proportions */
-    margin: 0 0 20px 20px;       /* espace à gauche et en dessous */
+    float: right;                
+    width: 190px;                
+    max-width: 40%;              
+    height: auto;               
+    margin: 0 0 20px 20px;       
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.mail {
+  display: block;       
+  margin-left: 60px;    
+  font-style: italic;   
+}
+
+.office {
+  display: block;      
+  margin-left: 60px;    
+  font-style: italic;   
 }
 
 h1, h2 {
