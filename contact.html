@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - Louis Tocquec</title>
 
+  <!-- CSS principal -->
   <link rel="stylesheet" href="style.css">
 
-
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-
 </head>
 <body>
   <header>
@@ -27,8 +27,6 @@
 
   <main>
     <h2>Contact</h2>
-    <!-- Photo à droite -->
-    <img src="ton-image.jpg" alt="Ma photo" class="portrait-right">
 
     <ul>
       <li>Mail: <em>firstname.lastname@universite-paris-saclay.fr</em></li>
@@ -37,27 +35,12 @@
 
     <h2>Où me trouver</h2>
     <div id="map"></div>
-    <div id="map"></div>
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-<script>
-  
-  const latitude = 48.70028;  
-  const longitude = 2.17847;  
-
-  const map = L.map('map').setView([latitude, longitude], 16);
-
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-  }).addTo(map);
-
-  L.marker([latitude, longitude])
-    .addTo(map)
-    .bindPopup("Mon bureau 🏢<br>Venez me dire bonjour !")
-    .openPopup();
-</script>
   </main>
 
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Script externe pour la carte -->
+  <script src="map.js"></script>
 </body>
+</html>
