@@ -76,7 +76,7 @@ main {
     width: 190px;                
     max-width: 40%;              
     height: auto;               
-    margin: 0 0 20px 20px;       
+    margin: 10px 10px 20px 20px;       
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0,0,0,0.2);
 }
