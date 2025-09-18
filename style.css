@@ -18,7 +18,7 @@ body {
 header {
   position: relative;
   background: url("Ville-Close.png") no-repeat center/cover; 
-  min-height: 350px; 
+  min-height: 400px; 
   padding: 100px 30px; 
   text-align: center;
   color: white; 
