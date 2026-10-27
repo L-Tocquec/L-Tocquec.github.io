@@ -215,6 +215,51 @@ a:hover {
   color: var(--primary);
 }
 
+/* =========================================================
+   AFFILIATION LOGOS
+   ========================================================= */
+
+.affiliation-logos {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+
+  margin-top: 30px;
+}
+
+.affiliation-logos a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.affiliation-logo {
+  display: block;
+
+  max-width: 105px;
+  max-height: 42px;
+
+  width: auto;
+  height: auto;
+
+  object-fit: contain;
+
+  opacity: 0.72;
+
+  filter: grayscale(20%);
+
+  transition:
+    opacity 0.2s ease,
+    filter 0.2s ease,
+    transform 0.2s ease;
+}
+
+.affiliation-logo:hover {
+  opacity: 1;
+
+  filter: grayscale(0%);
+
+  transform: translateY(-1px);
+}
 
 /* =========================================================
    MAIN CONTENT
