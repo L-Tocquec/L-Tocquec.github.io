@@ -436,7 +436,7 @@ strong {
 .text-link {
   display: inline-block;
 
-  margin-top: 8px;
+  margin-top: 6px;
 
   color: var(--primary);
 
@@ -488,45 +488,46 @@ strong {
   flex-direction: column;
 }
 
-.publication {
-  display: grid;
-
-  grid-template-columns: 75px 1fr;
-
-  gap: 25px;
-
-  padding: 28px 0;
+.publication-item {
+  padding: 25px 0;
 
   border-bottom: 1px solid var(--border);
 }
 
-.publication:first-child {
-  padding-top: 5px;
+.publication-item:first-child {
+  padding-top: 4px;
 }
 
-.publication-year {
-  margin: 4px 0 0;
-
-  color: var(--muted);
-
-  font-size: 0.9rem;
-}
-
-.publication h3 {
-  margin: 0 0 8px;
-
-  font-family: Georgia, "Times New Roman", serif;
+.publication-heading {
+  margin: 0 0 6px !important;
 
   color: var(--text);
 
-  font-size: 1.2rem;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 1rem;
+
+  line-height: 1.55;
+}
+
+.publication-heading strong {
+  font-weight: 650;
+}
+
+.publication-heading span {
   font-weight: 400;
 
-  line-height: 1.45;
+  color: var(--muted);
 }
 
 .authors {
-  margin: 0 0 8px;
+  margin: 0 0 6px !important;
 
   color: var(--muted);
 
@@ -535,91 +536,52 @@ strong {
 
 
 /* =========================================================
-   TALKS / TIMELINE
+   TALKS
    ========================================================= */
 
-.timeline {
-  position: relative;
-
-  margin-top: 10px;
+.talk-list {
+  display: flex;
+  flex-direction: column;
 }
 
-.timeline::before {
-  content: "";
+.talk-item {
+  padding: 22px 0;
 
-  position: absolute;
-
-  top: 5px;
-  bottom: 5px;
-
-  left: 112px;
-
-  width: 1px;
-
-  background: var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.timeline-item {
-  position: relative;
-
-  display: grid;
-
-  grid-template-columns: 90px 1fr;
-
-  gap: 45px;
-
-  padding: 0 0 32px;
+.talk-item:first-child {
+  padding-top: 4px;
 }
 
-.timeline-date {
-  padding-top: 3px;
-
-  color: var(--muted);
-
-  font-size: 0.83rem;
-
-  text-align: right;
-}
-
-.timeline-item::before {
-  content: "";
-
-  position: absolute;
-
-  left: 108px;
-  top: 8px;
-
-  width: 9px;
-  height: 9px;
-
-  background: var(--background);
-
-  border: 2px solid var(--primary);
-
-  border-radius: 50%;
-
-  z-index: 1;
-}
-
-.timeline-item h3 {
-  margin: 0 0 4px;
+.talk-heading {
+  margin: 0 0 5px !important;
 
   color: var(--text);
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
 
-  font-size: 1.08rem;
-  font-weight: 400;
-
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-.timeline-item p {
-  margin: 0;
+.talk-heading strong {
+  font-weight: 650;
+}
+
+.talk-heading span {
+  font-weight: 400;
+
+  color: var(--muted);
+}
+
+.talk-title {
+  margin: 0 !important;
 
   color: var(--muted);
 
-  font-size: 0.94rem;
+  font-size: 0.95rem;
+
+  line-height: 1.5;
 }
 
 
@@ -1016,38 +978,31 @@ footer {
 
   /* Publications */
 
-  .publication {
-    grid-template-columns: 1fr;
-
-    gap: 5px;
+  .publication-item {
+    padding: 20px 0;
   }
 
-  .publication-year {
-    margin-bottom: 4px;
+  .publication-heading {
+    font-size: 0.98rem;
+  }
+
+  .authors {
+    font-size: 0.9rem;
   }
 
 
-  /* Timeline */
+  /* Talks */
 
-  .timeline::before {
-    left: 4px;
+  .talk-item {
+    padding: 19px 0;
   }
 
-  .timeline-item {
-    grid-template-columns: 1fr;
-
-    gap: 4px;
-
-    padding-left: 28px;
-    padding-bottom: 28px;
+  .talk-heading {
+    font-size: 0.98rem;
   }
 
-  .timeline-date {
-    text-align: left;
-  }
-
-  .timeline-item::before {
-    left: 0;
+  .talk-title {
+    font-size: 0.9rem;
   }
 
 
