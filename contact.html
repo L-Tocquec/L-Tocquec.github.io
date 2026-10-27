@@ -1,57 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - Louis Tocquec</title>
 
-  <!-- CSS principal -->
+  <meta name="description"
+        content="Contact information for Louis Tocquec, PhD student in applied mathematics at Université Paris-Saclay.">
+
+  <title>Contact | Louis Tocquec</title>
+
   <link rel="stylesheet" href="style.css">
 
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
+
 <body>
-  <header>
-    <h1>Louis Tocquec</h1>
-    <h2>PhD student in applied mathematics</h2>
+
+  <header class="hero hero-small">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <h1>Louis Tocquec</h1>
+      <p>PhD student in applied mathematics</p>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="publications.html">Publications</a>
-    <a href="enseignement.html">Teaching</a>
-    <a href="contact.html">Contact</a>
+
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <a href="index.html" class="nav-name">LT</a>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="publications.html">Publications</a>
+        <a href="enseignement.html">Teaching</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+
+    </div>
   </nav>
 
-  <main>
-    <h2>Contact</h2>
-    <h3>Mails</h3>
-      <li>
-      firstname.lastname@universite-paris-saclay.fr
-      </li>
-      <li>
-      firstname.lastname@inria.fr
-      </li>
-      <h3>Offices</h3>
-      <li>
-      2A2, Institut de Mathématiques d'Orsay, 307 rue Michel Magat, 91400 Orsay
-      </li>
-      <li>
-      A411, Inria Paris, 48 Rue Barrault, 75013 Paris
-      </li>
-      <h3>LinkedIn</h3>
-      <li>
-      <a href="https://www.linkedin.com/in/louis-tocquec-283ba3198/" target="_blank" style="text-decoration: none;">Louis Tocquec</a>
-      </li>
 
-    <div id="map"></div>
+  <main class="container">
+
+    <section class="page-intro">
+      <p class="eyebrow">Get in touch</p>
+
+      <h2>Contact</h2>
+
+      <p>
+        You can reach me by email or find me at Université Paris-Saclay
+        and Inria Paris.
+      </p>
+    </section>
+
+
+    <section class="section">
+
+      <p class="section-number">01</p>
+
+      <div class="section-content">
+
+        <h2>Contact details</h2>
+
+        <div class="contact-grid">
+
+          <article class="contact-card">
+            <p class="contact-label">Email</p>
+
+            <h3>Université Paris-Saclay</h3>
+
+            <p>
+              firstname.lastname@universite-paris-saclay.fr
+            </p>
+
+            <h3>Inria</h3>
+
+            <p>
+              firstname.lastname@inria.fr
+            </p>
+          </article>
+
+
+          <article class="contact-card">
+            <p class="contact-label">Offices</p>
+
+            <h3>Laboratoire de Mathématiques d'Orsay</h3>
+
+            <p>
+              Office 2A2<br>
+              307 rue Michel Magat<br>
+              91400 Orsay, France
+            </p>
+
+            <h3>Inria Paris</h3>
+
+            <p>
+              Office A411<br>
+              48 rue Barrault<br>
+              75013 Paris, France
+            </p>
+          </article>
+
+
+          <article class="contact-card">
+            <p class="contact-label">Online</p>
+
+            <h3>LinkedIn</h3>
+
+            <p>
+              <a href="https://www.linkedin.com/in/louis-tocquec-283ba3198/"
+                 target="_blank"
+                 rel="noopener"
+                 class="text-link">
+                Louis Tocquec →
+              </a>
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="section">
+
+      <p class="section-number">02</p>
+
+      <div class="section-content">
+
+        <h2>Locations</h2>
+
+        <p>
+          My main offices are located in Orsay and Paris.
+        </p>
+
+        <div id="map"></div>
+
+      </div>
+
+    </section>
+
   </main>
+
+
+  <footer>
+    <div class="footer-content">
+      <p>Louis Tocquec</p>
+      <p>PhD student · Université Paris-Saclay</p>
+    </div>
+  </footer>
+
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-  <!-- Script externe pour la carte -->
+  <!-- Map script -->
   <script src="map.js"></script>
+
 </body>
 </html>
